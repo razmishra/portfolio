@@ -23,16 +23,19 @@ const portfolioItems = [
     image: img3,
     title: "Book My Cab",
     githubLink: "https://github.com/razmishra/cabBookingProject",
+    liveDemoLink: "https://github.com/razmishra/cabBookingProject",
   },
   {
     image: img4,
     title: "Fetch Live Stocks",
     githubLink: "https://github.com/razmishra/fetchLiveStockData",
+    liveDemoLink: "https://github.com/razmishra/fetchLiveStockData",
   },
   {
     image: img5,
     title: "Way Point Planner",
     githubLink: "https://github.com/Rajneesh436/Way_Point_Planner",
+    liveDemoLink: "https://github.com/Rajneesh436/Way_Point_Planner",
   },
 ];
 
