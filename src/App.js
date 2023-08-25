@@ -8,10 +8,26 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Updown from './Components/Updown/Updown'
+import AnimatedCursor from "react-animated-cursor";
 
 const App = () => {
   return (
     <div>
+      <AnimatedCursor
+        innerSize={6}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "#fff",
+        }}
+        outerStyle={{
+          border: "1px solid #fff",
+        }}
+      />
+
       <Header />
       <Nav />
       <About />
