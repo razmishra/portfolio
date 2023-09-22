@@ -48,7 +48,7 @@ const Portfolio = () => {
         {portfolioItems.map((item, index) => (
           <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
-              <img src={item.image} alt="" loading="lazy" />
+              <img src={item.image} alt="project images"/>
             </div>
             <h3>{item.title}</h3>
             <div className="portfolio__item-cta">
