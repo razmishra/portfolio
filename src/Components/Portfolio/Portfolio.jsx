@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.css";
 import img1 from "../../assets/img1.jpg";
 import img2 from "../../assets/img2.jpg";
 import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
 import img5 from "../../assets/img5.jpg";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const portfolioItems = [
   {
@@ -40,6 +42,12 @@ const portfolioItems = [
 ];
 
 const Portfolio = () => {
+  const [loadedImages, setLoadedImages] = useState([]);
+
+  const handleImageLoad = (index) => {
+    setLoadedImages((prevLoadedImages) => [...prevLoadedImages, index]);
+  };
+
   return (
     <section id="portfolio">
       <h5>My Recent Works</h5>
@@ -48,9 +56,25 @@ const Portfolio = () => {
         {portfolioItems.map((item, index) => (
           <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
-              <img src={item.image} alt="project images"/>
+              {!loadedImages.includes(index) && <Skeleton height={200} />}
+              <img
+                src={item.image}
+                alt="project images"
+                style={{
+                  display: loadedImages.includes(index) ? "block" : "none",
+                }}
+                onLoad={() => handleImageLoad(index)}
+              />
             </div>
-            <h3>{item.title}</h3>
+
+            <h3>
+              {loadedImages.includes(index) ? (
+                item.title
+              ) : (
+                <Skeleton count={1} height={20} />
+              )}
+            </h3>
+
             <div className="portfolio__item-cta">
               <a href={item.githubLink} className="btn" target="__blank">
                 Github
