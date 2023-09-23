@@ -25,6 +25,12 @@
 .about__me-img:hover{
     transform: rotate(0deg);
 }
+.about__me-img img{
+  transition: transform 0.3s ease;
+}
+.about__me-img:hover img{
+    transform: scale(1.2);
+}
 
 .about__cards{
     display: grid;
