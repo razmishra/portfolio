@@ -41,7 +41,7 @@ const About = () => {
           <p>
             I'm a dynamic full-stack developer, freelancer, and YouTuber with an
             M.Sc. in Mathematics and Computing from NIT Hamirpur. Currently a
-            backend developer at SoluLab, I blend innovation and expertise to
+            backend developer at SoluLab, Also a part time tutor. I blend innovation and expertise to
             craft seamless digital solutions.
           </p>
           <Link to="contact" className="btn btn-primary">
