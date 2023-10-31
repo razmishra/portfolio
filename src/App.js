@@ -9,11 +9,11 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Updown from "./Components/Updown/Updown";
 import AnimatedCursor from "react-animated-cursor";
-import {SkeletonTheme} from "react-loading-skeleton"
+import { SkeletonTheme } from "react-loading-skeleton";
 
 const App = () => {
   return (
-    <div>
+    <div style={{ paddingLeft: "1rem", paddingRight: "1rem", maxWidth:'1920px' }}>
       <AnimatedCursor
         innerSize={6}
         outerSize={35}
