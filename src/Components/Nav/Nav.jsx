@@ -18,7 +18,7 @@ const Nav = () => {
       <Link
         to="home"
         spy={true}
-        activeClass={activeNav === "home" ? "active" : ""}
+        className={activeNav === "home" ? "active" : ""}
         onClick={() => handleLinkClick("home")}
       >
         <AiOutlineHome />
@@ -26,7 +26,7 @@ const Nav = () => {
       <Link
         to="about"
         spy={true}
-        activeClass={activeNav === "about" ? "active" : ""}
+        className={activeNav === "about" ? "active" : ""}
         onClick={() => handleLinkClick("about")}
       >
         <AiOutlineUser />
@@ -34,7 +34,7 @@ const Nav = () => {
       <Link
         to="experience"
         spy={true}
-        activeClass={activeNav === "experience" ? "active" : ""}
+        className={activeNav === "experience" ? "active" : ""}
         onClick={() => handleLinkClick("experience")}
       >
         <BiBook />
@@ -42,7 +42,7 @@ const Nav = () => {
       <Link
         to="service"
         spy={true}
-        activeClass={activeNav === "service" ? "active" : ""}
+        className={activeNav === "service" ? "active" : ""}
         onClick={() => handleLinkClick("service")}
       >
         <RiServiceLine />
@@ -50,7 +50,7 @@ const Nav = () => {
       <Link
         to="contact"
         spy={true}
-        activeClass={activeNav === "contact" ? "active" : ""}
+        className={activeNav === "contact" ? "active" : ""}
         onClick={() => handleLinkClick("contact")}
       >
         <BiMessageSquareDetail />
