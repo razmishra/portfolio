@@ -5,10 +5,17 @@ import img2 from "../../assets/img2.jpg";
 import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
 import img5 from "../../assets/img5.jpg";
+import img6 from "../../assets/img6.png";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 const portfolioItems = [
+  {
+    image: img6,
+    title: "Online code compiler (MERN stack)",
+    githubLink: "https://github.com/orgs/approachjunction/repositories",
+    liveDemoLink: "https://approacheditor.vercel.app/",
+  },
   {
     image: img1,
     title: "Homeappliances24x7",
