@@ -10,7 +10,10 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState(null); 
 
   const handleLinkClick = (navId) => {
-    setActiveNav(navId);
+    setActiveNav(null,()=>{
+      setActiveNav(navId);
+    });
+    
   };
 
   return (
