@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 const CV =
-  "https://1drv.ms/b/s!AjK6I3KW6XMUiRkWsh7WXooIoMnt?e=JRL6hH";
+  "https://onedrive.live.com/?authkey=%21ABayHtZeigigye0&cid=1473E9967223BA32&id=1473E9967223BA32%211177&parId=root&o=OneUp";
 
 const CTA = () => {
   return (
