@@ -15,7 +15,7 @@ const Header = () => {
         <div className="typewriter-container">
         <Typewriter
           options={{
-            strings: ["Fullstack developer", "Youtuber","Open Source Contributor","Freelancer"],
+            strings: ["Fullstack developer", "Youtuber","Freelancer"],
             autoStart: true,
             loop: true,
           }}
