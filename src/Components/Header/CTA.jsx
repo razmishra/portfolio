@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 const CV =
-  "https://drive.google.com/file/d/19dfqASSIWMnDrQSQE705lVBu35dW5pB-/view?usp=sharing";
+  "https://drive.google.com/file/d/16-qVSxxefh3rX6RvUW0bwJMjryB0hGIW/view?usp=sharing";
 
 const CTA = () => {
   return (
